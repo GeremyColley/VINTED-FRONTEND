@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Offer from "./pages/Offer";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import CreateAccount from "./pages/CreateAccount";
+//import CreateAccount from "./pages/CreateAccount";
 import Header from "./components/Header"
 
 const App = () => {
