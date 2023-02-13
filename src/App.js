@@ -9,6 +9,7 @@ import Offer from "./pages/Offer";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import CreateAccount from "./pages/CreateAccount";
+import Header from "./components/Header"
 
 const App = () => {
   const [token, setToken] = useState(Cookies.get("token-vinted") || null);
@@ -26,6 +27,12 @@ const App = () => {
 
   return (
     <Router>
+      <Header
+        token={token}
+        search={search}
+        handleToken={handleToken}
+        setSearch={setSearch}
+      />
       <Routes>
         <Route path="/" element={<Home search={search} />} />
         <Route path="/offer/:id" element={<Offer />} />
